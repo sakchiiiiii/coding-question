@@ -1,0 +1,27 @@
+// Find the maximum element and its index in an array 
+
+#include <iostream>
+using namespace std;
+void MaxInArray(int a[],int l)
+{
+    int max=a[0];
+    int max_indx=-1;
+    for(int i=0;i<l;i++)
+    {
+        if(max<a[i])
+        {  max=a[i];
+           max_indx=i;
+        }
+    }
+    cout<<max<<endl<<max_indx;
+}
+int main()
+{
+    int arr[100],i,n;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+   MaxInArray(arr,n); 
+}
